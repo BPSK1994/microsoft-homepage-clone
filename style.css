@@ -163,36 +163,39 @@ body {
     padding: 48px 0px;
 }
 
-.icon-cards ul {
+.icon-cards__ul {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     margin-left: 48px;
     margin-right: 48px;
 }
 
-.icon-cards ul li a {
-    display: inline-block;
-    width: 184px;
-    padding: 12px 6px;
+.icon-cards__link--flex {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.icon-cards ul li a img {
+.icon-cards__link {
+    width: 184px;
+    padding: 12px 6px;
+}
+
+.icon-cards__img{
     width: 40px;
     height: 40px;
     margin-bottom: 8px;
 } 
 
-.icon-cards ul li a span {
+.icon-cards__link span {
     text-align: center;
     font-weight: 600;
     margin-left: 22px;
     margin-right: 22px;
+    color: var(--clr-link);
 }
 
-.icon-cards ul li a span:hover {
+.icon-cards__link:hover {
     text-decoration: underline;
     text-decoration-color: #262626;
     text-decoration-style: solid;
