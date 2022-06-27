@@ -7,7 +7,7 @@
     <title>Microsoft Official Homepage</title>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/52680bb7c9.js" crossorigin="anonymous"></script>
     <link href = "style.css" type = "text/css" rel = "stylesheet">
     
 </head>
@@ -25,19 +25,19 @@
                 <li class = "nav__li"><a href = "#">Support</a></li>
             </ul>
             <ul class = "nav__right nav__right--flex">
-                <li class = "nav__li"><a href = "#"><i class = "fas fa-search"></i></a></li>
-                <li class = "nav__li"><a href = "#"><i class = "fas fa-shopping-cart"></i></a></li>
+                <li class = "nav__li"><a href = "#"><i class = "fa-solid fa-magnifying-glass"></i></a></li>
+                <li class = "nav__li"><a href = "#"><i class = "fa-solid fa-cart-shopping"></i></a></li>
             </ul>
         </nav>
 
         <!--Showcase-->
 
-        <header class="showcase">
+        <header class="showcase showcase-1">
             <div class = "showcase__content">
                 <a href = "#" class = "showcase__btn--clr-green"><span>Sale</span></a>
                 <h2 class = "showcase__heading">Surface Laptop Studio Essentials Bundle</h2>
                 <p class = "showcase__para">Buy the Surface Laptop Studio and save with discount on M365 subscription, accessories, cases and sleeves.</p>
-                <a href="#" class="showcase__btn--clr-blk"><span>Shop Now</span><i class="fas fa-chevron-right"></i></a>
+                <a href="#" class="showcase__btn--clr-blk"><span>Shop Now</span><i class="fa-solid fa-chevron-right"></i></a>
             </div>    
         </header>
 
@@ -88,168 +88,181 @@
         </div>
 
         <!--Home Cards 1-->
-        <section class = "home-cards">
-            <div>
-                <img src = "images/card1.jpg" alt = "">
-                <h3>Save up to 80% on selected Xbox digital games</h3>
-                <p>Add something new to your queue with deep discounts on top titles. Offers end April 22.</p>
-                <a href = "#" class = "home-cards-link"><span>Save now</span><i class="fas fa-chevron-right"></i></a>
+        <section class = "home-cards home-cards--grid">
+            <div class = "home-cards__content">
+                <img  class = "home-cards__img" src = "images/card1.jpg" alt = "">
+                <h3 class = "home-cards__heading">Save up to 80% on selected Xbox digital games</h3>
+                <p class = "home-cards__para">Add something new to your queue with deep discounts on top titles. Offers end April 22.</p>
+                <a href = "#" class = "home-cards__link"><span>Save now</span><i class="fa-solid fa-chevron-right"></i></a>
             </div>
 
-            <div>
-                <img src = "images/card2.png" alt = "">
-                <h3>Microsoft 365</h3>
-                <p>Premium Office apps, extra cloud storage, advanced security, and more – all in one convenient subscription.</p>
-                <div class = "multi-links">
-                    <a href = "#" class = "home-cards-link"><span>For up to 6 people</span><i class="fas fa-chevron-right"></i></a>
-                    <a href = "#" class = "home-cards-link"><span>For 1 person</span><i class="fas fa-chevron-right"></i></a>
+            <div class = "home-cards__content">
+                <img class = "home-cards__img" src = "images/card2.png" alt = "">
+                <h3 class = "home-cards__heading">Microsoft 365</h3>
+                <p class = "home-cards__para">Premium Office apps, extra cloud storage, advanced security, and more – all in one convenient subscription.</p>
+                <div class = "home-cards__multi-links">
+                    <a href = "#" class = "home-cards__link"><span>For up to 6 people</span><i class="fa-solid fa-chevron-right"></i></a>
+                    <a href = "#" class = "home-cards__link"><span>For 1 person</span><i class="fa-solid fa-chevron-right"></i></a>
                 </div>
             </div>
 
-            <div>
-                <img src = "images/card3.jpeg" alt = "">
-                <h3>Surface Pro 8</h3>
-                <p>Create from anywhere with the ultimate combination of power and portability.</p>
-                <a href = "#" class = "home-cards-link"><span>Shop now</span><i class="fas fa-chevron-right"></i></a>
+            <div class = "home-cards__content">
+                <img class = "home-cards__img" src = "images/card3.jpeg" alt = "">
+                <h3 class = "home-cards__heading">Surface Pro 8</h3>
+                <p class = "home-cards__para">Create from anywhere with the ultimate combination of power and portability.</p>
+                <a href = "#" class = "home-cards__link"><span>Shop now</span><i class="fa-solid fa-chevron-right"></i></a>
             </div>
 
-            <div>
-                <img src = "images/card4.png" alt = "">
-                <h3>Xbox Series S</h3>
-                <p>Next-gen performance in the smallest Xbox ever.</p>
-                <a href = "#" class = "home-cards-link"><span>Shop now</span><i class="fas fa-chevron-right"></i></a>
+            <div class = "home-cards__content">
+                <img class = "home-cards__img" src = "images/card4.png" alt = "">
+                <h3 class = "home-cards__heading">Xbox Series S</h3>
+                <p class = "home-cards__para">Next-gen performance in the smallest Xbox ever.</p>
+                <a href = "#" class = "home-cards__link"><span>Shop now</span><i class="fa-solid fa-chevron-right"></i></a>
             </div>
         </section>
 
 
-        <!--Windows 11-->
-        <section class="windows">
-            <div class="content">
-                <h2>Windows 11</h2>
-                <p>See how Windows 11 brings you closer to what you love</p>
-                <a href = "#" class = "button-wht"><span>Explore Windows 11</span><i class = "fas fa-chevron-right"></i></a>
+        <!--Showcase 2-->
+        <section class="showcase showcase-2">
+            <div class="showcase__content">
+                <h2 class = "showcase__heading">Xbox controllers</h2>
+                <p class = "showcase__para">Elite, wireless, adaptive - find the controller that fits your style of play</p>
+                <a class = "showcase__btn--clr-blk" href = "#" ><span>Shop now</span><i class = "fa-solid fa-chevron-right"></i></a>
             </div>
         </section>
 
          <!--Home Cards 2-->
-         <div class = "pre-home-cards">
-             <h2>For business</h2>
+         <div class = "home-cards-2">
+             <h2 class = "home-cards-2__heading">For business</h2>
          </div>
 
-         <section class = "home-cards">
-            <div>
-                <img src = "images/card5.jpg" alt = "">
-                <a href = "#" class = "new-button"><span>New</span></a>
-                <h3>Surface Pro 8 for Business</h3>
-                <p>Get unprecedented levels of performance and versatility on a 13-inch screen. Available with Windows 11.</p>
-                <a href = "#" class = "home-cards-link"><span>Shop now</span><i class="fas fa-chevron-right"></i></a>
+         <section class = "home-cards home-cards--grid">
+            <div class = "home-cards__content">
+                <img class = "home-cards__img" src = "images/card5.jpg" alt = "">
+                <a  class = "home-cards__new-btn" href = "#" ><span>New</span></a>
+                <h3 class = "home-cards__heading">Surface Pro 8 for Business</h3>
+                <p class = "home-cards__para">Get unprecedented levels of performance and versatility on a 13-inch screen. Available with Windows 11.</p>
+                <a class = "home-cards__link" href = "#" ><span>Shop now</span><i class="fa-solid fa-chevron-right"></i></a>
             </div>
 
-            <div>
-                <img src = "images/card6.jpg" alt = "">
-                <h3>Get Microsoft Teams for free</h3>
-                <p>Online meetings, chat and shared cloud storage – all in one place.</p>
-                <a href = "#" class = "home-cards-link"><span>Sign up for free</span><i class="fas fa-chevron-right"></i></a>
+            <div class = "home-cards__content">
+                <img class = "home-cards__img" src = "images/card6.jpg" alt = "">
+                <h3 class = "home-cards__heading">Get Microsoft Teams for free</h3>
+                <p class = "home-cards__para">Online meetings, chat and shared cloud storage – all in one place.</p>
+                <a class = "home-cards__link" href = "#" ><span>Sign up for free</span><i class="fa-solid fa-chevron-right"></i></a>
             
             </div>
 
-            <div>
-                <img src = "images/card7.jpg" alt = "">
-                <h3>Microsoft 365 for business</h3>
-                <p>Stay a step ahead with powerful apps for productivity, connection and security.</p>
-                <a href = "#" class = "home-cards-link"><span>Shop now</span><i class="fas fa-chevron-right"></i></a>
+            <div class = "home-cards__content">
+                <img class = "home-cards__img" src = "images/card7.jpg" alt = "">
+                <h3 class = "home-cards__heading">Microsoft 365 for business</h3>
+                <p class = "home-cards__para">Stay a step ahead with powerful apps for productivity, connection and security.</p>
+                <a class = "home-cards__link" href = "#" ><span>Shop now</span><i class="fa-solid fa-chevron-right"></i></a>
             </div>
 
-            <div>
-                <img src = "images/card8.jpg" alt = "">
-                <h3>Windows 11 for business is here</h3>
-                <p>Designed for hybrid work. Powerful for employees. Consistent for IT. Secure for all.</p>
-                <a href = "#" class = "home-cards-link"><span>Learn more</span><i class="fas fa-chevron-right"></i></a>
+            <div class = "home-cards__content">
+                <img class = "home-cards__img" src = "images/card8.jpg" alt = "">
+                <h3 class = "home-cards__heading">Windows 11 for business is here</h3>
+                <p class = "home-cards__para">Designed for hybrid work. Powerful for employees. Consistent for IT. Secure for all.</p>
+                <a class = "home-cards__link" href = "#" ><span>Learn more</span><i class="fa-solid fa-chevron-right"></i></a>
             </div>
         </section>
 
+
+        <!-- Social Media -->
         <section class = "social">
             <span>Follow Microsoft</span>
-            <ul>
-                <li><a href = "#"><img src = "images/facebook.png" alt = "facebook"></a></li>
-                <li><a href = "#"><img src = "images/twitter.png" alt = "twitter"></a></li>
-                <li><a href = "#"><img src = "images/youtube.png" alt = "youtube"></a></li>
-                <li><a href = "#"><img src = "images/instagram.png" alt = "instagram"></a></li>
+            <ul class = "social__list">
+                <li>
+                    <a class = "social__link" href = "http://www.facebook.com" target="_blank"><img src = "images/facebook.png" alt = "facebook"></a>
+                </li>
+
+                <li>
+                    <a class = "social__link" href = "http://www.twitter.com" target="_blank"><img src = "images/twitter.png" alt = "twitter"></a>
+                </li>
+
+                <li>
+                    <a class = "social__link" href = "http://www.youtube.com" target="_blank"><img src = "images/youtube.png" alt = "youtube"></a>
+                </li>
+
+                <li>
+                    <a class = "social__link" href = "http://www.instagram.com" target="_blank"><img src = "images/instagram.png" alt = "instagram"></a>
+                </li>
             </ul>
         </section>
     </div>
 
-    <!--Links-->
-    <section class="links">
-        <div class="links-inner">
-            <ul>
-                <li><h3>What's new</h3></li>
-                <li><a href = "#">Surface Pro 8</a></li>
-                <li><a href = "#">Surface Laptop Studio</a></li>
-                <li><a href = "#">Surface Pro X</a></li>
-                <li><a href = "#">Surface Go 3</a></li>
-                <li><a href = "#">Surface Duo 2</a></li>
-                <li><a href = "#">Surface Pro 7+</a></li>
-                <li><a href = "#">Windows 11 apps</a></li>
-                <li><a href = "#">Hololens 2</a></li>
+    <!--Site Map-->
+    <section class="site-map">
+        <div class="site-map__content">
+            <ul class = "site-map__list">
+                <li><h3 class = "site-map__header">What's new</h3></li>
+                <li><a class ="site-map__link" href = "#">Surface Pro 8</a></li>
+                <li><a class ="site-map__link" href = "#">Surface Laptop Studio</a></li>
+                <li><a class ="site-map__link" href = "#">Surface Pro X</a></li>
+                <li><a class ="site-map__link" href = "#">Surface Go 3</a></li>
+                <li><a class ="site-map__link" href = "#">Surface Duo 2</a></li>
+                <li><a class ="site-map__link" href = "#">Surface Pro 7+</a></li>
+                <li><a class ="site-map__link" href = "#">Windows 11 apps</a></li>
+                <li><a class ="site-map__link" href = "#">Hololens 2</a></li>
             </ul>
 
-            <ul>
-                <li><h3>Microsoft Store</h3></li>
-                <li><a href = "#">Account profile</a></li>
-                <li><a href = "#">Download Center</a></li>
-                <li><a href = "#">Microsoft Store Support</a></li>
-                <li><a href = "#">Returns</a></li>
-                <li><a href = "#">Order tracking</a></li>
-                <li><a href = "#">Microsoft Experience Centre</a></li>
-                <li><a href = "#">Recycling</a></li>
-                <li><a href = "#">Microsoft Store Promise</a></li>
+            <ul class = "site-map__list">
+                <li><h3 class = "site-map__header">Microsoft Store</h3></li>
+                <li><a class ="site-map__link" href = "#">Account profile</a></li>
+                <li><a class ="site-map__link" href = "#">Download Center</a></li>
+                <li><a class ="site-map__link" href = "#">Microsoft Store Support</a></li>
+                <li><a class ="site-map__link" href = "#">Returns</a></li>
+                <li><a class ="site-map__link" href = "#">Order tracking</a></li>
+                <li><a class ="site-map__link" href = "#">Microsoft Experience Centre</a></li>
+                <li><a class ="site-map__link" href = "#">Recycling</a></li>
+                <li><a class ="site-map__link" href = "#">Microsoft Store Promise</a></li>
             </ul>
 
-            <ul>
-                <li><h3>Education</h3></li>
-                <li><a href = "#">Microsoft in Education</a></li>
-                <li><a href = "#">Devices for education</a></li>
-                <li><a href = "#">Microsoft Teams for Education</a></li>
-                <li><a href = "#">Microsoft 365 Education</a></li>
-                <li><a href = "#">Office Education</a></li>
-                <li><a href = "#">Educator training and development</a></li>
-                <li><a href = "#">Deals for students and parents</a></li>
-                <li><a href = "#">Azure for students</a></li>
+            <ul class = "site-map__list">
+                <li><h3 class = "site-map__header">Education</h3></li>
+                <li><a class ="site-map__link" href = "#">Microsoft in Education</a></li>
+                <li><a class ="site-map__link" href = "#">Devices for education</a></li>
+                <li><a class ="site-map__link" href = "#">Microsoft Teams for Education</a></li>
+                <li><a class ="site-map__link" href = "#">Microsoft 365 Education</a></li>
+                <li><a class ="site-map__link" href = "#">Office Education</a></li>
+                <li><a class ="site-map__link" href = "#">Educator training and development</a></li>
+                <li><a class ="site-map__link" href = "#">Deals for students and parents</a></li>
+                <li><a class ="site-map__link" href = "#">Azure for students</a></li>
             </ul>
 
-            <ul>
-                <li><h3>Business</h3></li>
-                <li><a href = "#">Microsoft Cloud</a></li>
-                <li><a href = "#">Microsoft Security</a></li>
-                <li><a href = "#">Azure</a></li>
-                <li><a href = "#">Dynamics 365</a></li>
-                <li><a href = "#">Microsoft 365</a></li>
-                <li><a href = "#">Microsoft Advertising</a></li>
-                <li><a href = "#">Microsoft Industry</a></li>
-                <li><a href = "#">Microsoft Teams</a></li>
+            <ul class = "site-map__list">
+                <li><h3 class = "site-map__header">Business</h3></li>
+                <li><a class ="site-map__link" href = "#">Microsoft Cloud</a></li>
+                <li><a class ="site-map__link" href = "#">Microsoft Security</a></li>
+                <li><a class ="site-map__link" href = "#">Azure</a></li>
+                <li><a class ="site-map__link" href = "#">Dynamics 365</a></li>
+                <li><a class ="site-map__link" href = "#">Microsoft 365</a></li>
+                <li><a class ="site-map__link" href = "#">Microsoft Advertising</a></li>
+                <li><a class ="site-map__link" href = "#">Microsoft Industry</a></li>
+                <li><a class ="site-map__link" href = "#">Microsoft Teams</a></li>
             </ul>
 
-            <ul>
-                <li><h3>Developer & IT</h3></li>
-                <li><a href = "#">Developer Center</a></li>
-                <li><a href = "#">Documentation</a></li>
-                <li><a href = "#">Microsoft Learn</a></li>
-                <li><a href = "#">Microsoft Tech Community</a></li>
-                <li><a href = "#">Azure Marketplace</a></li>
-                <li><a href = "#">AppSource</a></li>
-                <li><a href = "#">Microsoft Power Platform</a></li>
-                <li><a href = "#">Visual Studio</a></li>
+            <ul class = "site-map__list">
+                <li><h3 class = "site-map__header">Developer & IT</h3></li>
+                <li><a class ="site-map__link" href = "#">Developer Center</a></li>
+                <li><a class ="site-map__link" href = "#">Documentation</a></li>
+                <li><a class ="site-map__link" href = "#">Microsoft Learn</a></li>
+                <li><a class ="site-map__link" href = "#">Microsoft Tech Community</a></li>
+                <li><a class ="site-map__link" href = "#">Azure Marketplace</a></li>
+                <li><a class ="site-map__link" href = "#">AppSource</a></li>
+                <li><a class ="site-map__link" href = "#">Microsoft Power Platform</a></li>
+                <li><a class ="site-map__link" href = "#">Visual Studio</a></li>
             </ul>
 
-            <ul>
-                <li><h3>Company</h3></li>
-                <li><a href = "#">Careers</a></li>
-                <li><a href = "#">About Microsoft</a></li>
-                <li><a href = "#">Company news</a></li>
-                <li><a href = "#">Privacy at Microsoft</a></li>
-                <li><a href = "#">Investors</a></li>
-                <li><a href = "#">Sustainability</a></li>
+            <ul class = "site-map__list">
+                <li><h3 class = "site-map__header">Company</h3></li>
+                <li><a class ="site-map__link" href = "#">Careers</a></li>
+                <li><a class ="site-map__link" href = "#">About Microsoft</a></li>
+                <li><a class ="site-map__link" href = "#">Company news</a></li>
+                <li><a class ="site-map__link" href = "#">Privacy at Microsoft</a></li>
+                <li><a class ="site-map__link" href = "#">Investors</a></li>
+                <li><a class ="site-map__link" href = "#">Sustainability</a></li>
             </ul>
         </div>
     </section>
@@ -257,25 +270,23 @@
     <!--Footer-->
 
     <footer class="footer">
-        <div class="footer-inner">
-            <div>
-                <i class = "fas fa-globe fa-2x"></i>
+        <div class="footer__content">
+            <div class = "footer__left">
+                <i class = "fa-solid fa-earth-europe"></i>
                 <span>English (United Kingdom)</span>
             </div>
-            <ul>
-                <li><a href = "#">Contact Microsoft</a></li>
-                <li><a href = "#">Privacy</a></li>
-                <li><a href = "#">Manage cookies</a></li>
-                <li><a href = "#">Terms of use</a></li>
-                <li><a href = "#">Trademarks</a></li>
-                <li><a href = "#">About our ads</a></li>
-                <li><a href = "#">EU Compliance DoCs</a></li>
-                <li><a href = "#">Regulatory reporting</a></li>
-                <li><a href = "#">&copy; Microsoft 2022</a></li>
+            <ul class = "footer__right">
+                <li><a class = "footer__right-link" href = "#">Contact Microsoft</a></li>
+                <li><a class = "footer__right-link" href = "#">Privacy</a></li>
+                <li><a class = "footer__right-link" href = "#">Manage cookies</a></li>
+                <li><a class = "footer__right-link" href = "#">Terms of use</a></li>
+                <li><a class = "footer__right-link" href = "#">Trademarks</a></li>
+                <li><a class = "footer__right-link" href = "#">About our ads</a></li>
+                <li><a class = "footer__right-link" href = "#">EU Compliance DoCs</a></li>
+                <li><a class = "footer__right-link" href = "#">Regulatory reporting</a></li>
+                <li><a class = "footer__right-link" href = "#">&copy; Microsoft 2022</a></li>
             </ul>
         </div>
-    </footer>
-
-    
+    </footer>    
 </body>
 </html>
