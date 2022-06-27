@@ -1,73 +1,86 @@
-/* Reset margin and padding for every element on the page */ 
+:root {
+    /* color */
+    --clr-link: #262626;
+    --clr-paragraph: #000000;
+    --clr-heading: #000000;
+
+    /* font size */
+    --font-size-paragraph: 15px;
+    --font-size-heading: 24px;
+}
+
+
 * {  
     box-sizing: border-box;
     padding: 0px;
     margin: 0px;
+    text-decoration: none;
+    list-style: none;
 }
 
 body {
-    font-family: Segoe UI,SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Segoe UI","Helvetica Neue",Helvetica,Arial,sans-serif;
     background: #fff;
-    font-size: 15px;
     color: #000;
     line-height: 1.5;
-
 }
 
-a {
-    color: #262626;
-    text-decoration: none; /*removing underline */
-    display: inline-block;
-}
 
-ul {
-    list-style: none; /*remove bullet points */
-}
-
-/* container wraps around everything */
+/* CONTAINER */
 .container {
     width: 90%;
     max-width: 1600px;
     margin: auto;
-    
 }
 
-/* NAV */
-.main-nav {
+/* NAVIGATION */
+.nav--flex {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+}
+
+.nav {
     height: 54px;
     padding: 20px 0;
     font-size: 13px;
 }
 
-.main-nav .logo {
+.nav__logo {
     width: 125px;
     padding: 16px 6px 16px 10px;
+    cursor: pointer;
 }
 
-.main-nav ul {
+.nav__main--flex {
     display: flex;
     flex-direction: row;
 }
 
-.main-nav ul.main-menu {
+.nav__main {
     flex-grow: 1;
     margin-left: 20px;
 }
 
 
-.main-nav ul li {
+.nav__li {
     padding: 0 10px;
 } 
 
-.main-nav ul li a {
+.nav__li a {
     padding-bottom: 2px;
+    color: var(--clr-link);
 }
-.main-nav ul li a:hover {
+
+.nav__li a:hover {
     border-bottom: 2px solid #262626;
+}
+
+
+.nav__right--flex {
+    display: flex;
+    flex-direction: row;
 }
 
 
@@ -82,32 +95,31 @@ ul {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover; 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
     position: relative;
-
 }
 
-.showcase h2 {
-    font-weight: 600;
-    font-size: 24px;
-}
-
-.showcase h2, .showcase p {
-    color: #000;
-    margin-bottom: 10px;
-   
-}
-
-.showcase div  {
+.showcase__content {
     width: 40%;
     position: absolute;
     left: 78px;
+    top: 148.5px;
 }
 
-.showcase div .sale-button {
+.showcase__heading {
+    font-weight: 600;
+    font-size: var(--font-size-heading);
+    color: var(--clr-heading);
+    margin-bottom: 10px;
+}
+
+.showcase__para {
+    color: var(--clr-paragraph);
+    font-size: var(--font-size-paragraph);
+    margin-bottom: 10px;
+}
+
+
+.showcase__btn--clr-green {
     display: inline-block;
     color: #000;
     padding: 3px 14px 5px;
@@ -117,7 +129,7 @@ ul {
     margin-bottom: 4px;
 }
 
-.button-blk {
+.showcase__btn--clr-blk {
     cursor: pointer;
     display: inline-block;
     border: 0;
@@ -130,16 +142,16 @@ ul {
     text-align: center;
 }
 
-.button-blk i {
+.showcase__btn--clr-blk i {
     margin-left: 3px;
 }
 
 
-.button-blk:hover {
+.showcase__btn--clr-blk:hover {
     opacity: 0.9;
 }
 
-.showcase .button-blk:hover span {
+.showcase__btn--clr-blk:hover span {
     border-bottom: 2px solid #fff;
 }
 

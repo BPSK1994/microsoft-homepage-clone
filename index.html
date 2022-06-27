@@ -4,37 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microsoft Official Homepage</title>
+
+    <!-- CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href = "style.css" type = "text/css" rel = "stylesheet">
-    <title>Microsoft Official Homepage</title>
+    
 </head>
 <body>
     <div class = "container"> <!-- Main container begins here-->
-        <nav class = "main-nav"> <!--Nav-->
-            <img class = "logo" src = "images/logo.png" alt = "Microsoft">
-            <ul class = "main-menu">
-                <li><a href = "#">Microsoft 365</a></li>
-                <li><a href = "#">Office</a></li>
-                <li><a href = "#">Windows</a></li>
-                <li><a href = "#">Surface</a></li>
-                <li><a href = "#">Xbox</a></li>
-                <li><a href = "#">Deals</a></li>
-                <li><a href = "#">Support</a></li>
+        <nav class = "nav nav--flex"> <!--Navigation-->
+            <img class = "nav__logo" src = "images/logo.png" alt = "Microsoft">
+            <ul class = "nav__main nav__main--flex">
+                <li class = "nav__li"><a href = "#">Microsoft 365</a></li>
+                <li class = "nav__li"><a href = "#">Office</a></li>
+                <li class = "nav__li"><a href = "#">Windows</a></li>
+                <li class = "nav__li"><a href = "#">Surface</a></li>
+                <li class = "nav__li"><a href = "#">Xbox</a></li>
+                <li class = "nav__li"><a href = "#">Deals</a></li>
+                <li class = "nav__li"><a href = "#">Support</a></li>
             </ul>
-            <ul class = "right-menu">
-                <li><a href = "#"><i class = "fas fa-search"></i></a></li>
-                <li><a href = "#"><i class = "fas fa-shopping-cart"></i></a></li>
+            <ul class = "nav__right nav__right--flex">
+                <li class = "nav__li"><a href = "#"><i class = "fas fa-search"></i></a></li>
+                <li class = "nav__li"><a href = "#"><i class = "fas fa-shopping-cart"></i></a></li>
             </ul>
         </nav>
 
         <!--Showcase-->
 
         <header class="showcase">
-            <div>
-                <a href = "#" class = "sale-button"><span>Sale</span></a>
-                <h2>Surface Laptop Studio Essentials Bundle</h2>
-                <p>Buy the Surface Laptop Studio and save with discount on M365 subscription, accessories, cases and sleeves.</p>
-                <a href="#" class="button-blk"><span>Shop Now</span><i class="fas fa-chevron-right"></i></a>
+            <div class = "showcase__content">
+                <a href = "#" class = "showcase__btn--clr-green"><span>Sale</span></a>
+                <h2 class = "showcase__heading">Surface Laptop Studio Essentials Bundle</h2>
+                <p class = "showcase__para">Buy the Surface Laptop Studio and save with discount on M365 subscription, accessories, cases and sleeves.</p>
+                <a href="#" class="showcase__btn--clr-blk"><span>Shop Now</span><i class="fas fa-chevron-right"></i></a>
             </div>    
         </header>
 
